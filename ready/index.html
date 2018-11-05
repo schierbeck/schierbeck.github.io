@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+
+	@keyframes move {
+	  0% { transform: translateX(1000px);}
+    100%{ transform: translateX(-4320px);}
+	}
+
+	.slow,
+	.medium,
+	.fast,
+	.insane {
+		position:absolute;
+		left: 0;
+	  width: 4320px;
+	  top: 0;
+	  bottom: 0;
+    animation:linear infinite;
+    animation-name: move;
+    overflow: visible;
+	}
+
+	.slow	{
+		background: url('ready_Slow.svg') 0% 0% repeat;
+    animation-duration: 4s;
+	}
+
+	.medium {
+		background: url('ready_Medium.svg') 0% 0% repeat;
+    animation-duration: 3s;
+	}
+
+	.fast {
+		background: url('ready_Fast.svg') 0% 0% repeat;
+    animation-duration: 2s;
+	}
+
+		.insane {
+			background: url('ready_Insane.svg') 0% 0% repeat;
+	    animation-duration: 1.5s;
+		}
+		
+		#box {
+			position: relative;
+			height: 747.58px;
+			width: 1000px;
+			background-image: url('ready_Bg.svg');
+			overflow: hidden;
+			left: 50%;
+			margin-left: -500px;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	
+	<div id="box">
+		<div class="slow"></div>
+		<div class="medium"></div>
+		<div class="fast"></div>
+		<div class="insane"></div>
+	</div>
+
+</body>
+</html>
