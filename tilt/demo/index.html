@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+	<link rel="stylesheet" href="../style.css" />
+	<script src="../photoTilt.js"></script>
+	<style>
+		img {
+			mix-blend-mode: exclusion;
+		}
+	</style>
+</head>
+<body>
+<script>
+    (function() {
+        var photoTilt = new PhotoTilt({
+            url:'http://farm5.staticflickr.com/4016/4251578904_f13592585c_b.jpg',
+            lowResUrl: 'http://farm5.staticflickr.com/4016/4251578904_f13592585c_m.jpg',
+            maxTilt: 12,
+            reverseTilt: false
+        });
+    })();
+</script>
+</body>
+
+
+<body>
+<script>
+    (function() {
+        var photoTilt2 = new PhotoTilt({
+            url:'bild.jpg',
+            lowResUrl: 'bild.jpg',
+            maxTilt: 12
+        });
+    })();
+</script>
+</body>
+
+</html>
+
+
